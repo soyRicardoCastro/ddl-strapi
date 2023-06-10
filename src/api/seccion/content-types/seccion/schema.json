@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secciones",
+  "info": {
+    "singularName": "seccion",
+    "pluralName": "secciones",
+    "displayName": "Seccion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "lecciones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::leccion.leccion"
+    }
+  }
+}
